@@ -1,0 +1,237 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #2f281e;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+.header {
+    width: 1126px;
+    height: 116px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.logo-shape {
+    width: 25px;
+    height: 25px;
+
+    background-color: #ff9900;
+    border-radius: 7px;
+
+    /* CSS transformation */
+    transform: rotate(25deg);
+}
+
+
+/* Navigation */
+
+.navigation {
+    display: flex;
+    gap: 30px;
+
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #2f281e;
+
+    font-size: 14px;
+}
+
+
+/* Header buttons */
+
+.header-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.header-buttons button {
+    height: 43px;
+    padding: 0 25px;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.sign-in {
+    background-color: white;
+    border: 1px solid #bcd0e5;
+    color: #173b5f;
+}
+
+.sign-up {
+    background-color: #ff9900;
+    border: 1px solid #ff9900;
+    color: white;
+}
+
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
+
+.main-content {
+    width: 1126px;
+    margin: 60px auto 0;
+}
+
+
+/* Intro section */
+
+.intro {
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+
+    /* Positioning */
+    position: relative;
+}
+
+
+/* =========================
+   TEXT
+   ========================= */
+
+.intro-text {
+    width: 52%;
+    padding-top: 70px;
+
+    /* Positioning */
+    position: relative;
+    z-index: 2;
+}
+
+.intro-text h1 {
+    font-size: 40px;
+    line-height: 1.25;
+
+    margin-bottom: 25px;
+}
+
+.intro-text p {
+    width: 480px;
+
+    font-size: 18px;
+    line-height: 1.5;
+
+    margin-bottom: 45px;
+}
+
+
+/* =========================
+   INTRO BUTTONS
+   ========================= */
+
+.intro-buttons {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.get-started {
+    width: 160px;
+    height: 50px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #ff9900;
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.watch-video {
+    color: #ff9900;
+
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.play {
+    display: inline-block;
+    margin-right: 8px;
+
+    /* CSS transformation */
+    transform: scale(1.1);
+}
+
+
+/* =========================
+   IMAGE
+   ========================= */
+
+.intro-image {
+    width: 48%;
+    height: 100%;
+
+    /* Positioning */
+    position: relative;
+}
+
+.intro-image img {
+    width: 560px;
+
+    /* Positioning */
+    position: absolute;
+
+    top: 0;
+    right: -20px;
+
+    /* Transformation */
+    transform: translate(10px, 5px);
+}
+
+
+/* =========================
+   HOVER EFFECT
+   ========================= */
+
+.get-started,
+.sign-up {
+    transition: transform 0.2s ease;
+}
+
+.get-started:hover,
+.sign-up:hover {
+
+    /* Transformation */
+    transform: translateY(-3px);
+}
