@@ -1,4 +1,4 @@
-/* Reset */
+
 
 * {
     margin: 0;
@@ -7,231 +7,477 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    background-color: #ffffff;
     color: #2f281e;
+
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
 }
 
 
-/* =========================
-   HEADER
-   ========================= */
-
-.header {
-    width: 1126px;
-    height: 116px;
+.container {
+    width: 1110px;
     margin: 0 auto;
-
-    display: flex;
-    align-items: center;
 }
 
 
-/* Logo */
+/* ============= LOGO ============= */
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
 
-    font-size: 26px;
-    font-weight: bold;
+    text-decoration: none;
 }
 
-.logo-shape {
-    width: 25px;
-    height: 25px;
+.logo__img {
+    display: block;
+    width: 187.34px;
+}
+
+.logo:hover {
+    opacity: 0.75;
+}
+
+
+/* ============= BUTTONS ============= */
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 46px;
+    padding: 0 22px;
+
+    border: 1px solid #ff9900;
+    border-radius: 4px;
+
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+
+    /* keeps button text on one line */
+    white-space: nowrap;
+
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+/* White button with a border - "Sign In" */
+
+.btn--white {
+    width: 102px;
+
+    background-color: #ffffff;
+    border-color: #BCD0E5;
+    color: #173a56;
+}
+
+.btn--white:hover {
+    border-color: #ff9900;
+    color: #ff9900;
+    transform: translateY(-2px);
+}
+
+/* Orange button - "Sign Up", "Get started" */
+
+.btn--orange {
+    width: 110px;
 
     background-color: #ff9900;
-    border-radius: 7px;
+    color: #ffffff;
+}
 
-    /* CSS transformation */
-    transform: rotate(25deg);
+.btn--orange:hover {
+    background-color: #e08600;
+    border-color: #e08600;
+    transform: translateY(-2px);
+}
+
+/* Bigger orange button */
+
+.btn--big {
+    width: 175px;
+    height: 53px;
+    font-weight: 700;
 }
 
 
-/* Navigation */
+/* ============= NAVIGATION ============= */
 
-.navigation {
+.nav {
     display: flex;
-    gap: 30px;
+    align-items: center;
 
-    margin-left: auto;
-    margin-right: 40px;
+    padding-top: 35px;
 }
 
-.navigation a {
-    text-decoration: none;
+.nav__menu {
+    display: flex;
+    gap: 37px;
+
+    /* auto margin pushes the menu to the right side */
+    margin-left: auto;
+    margin-right: 29px;
+}
+
+.nav__link {
     color: #2f281e;
 
     font-size: 14px;
+    text-decoration: none;
+
+    transition: 0.25s;
 }
 
+.nav__link:hover {
+    color: #ff9900;
+}
 
-/* Header buttons */
-
-.header-buttons {
+.nav__btns {
     display: flex;
-    gap: 12px;
-}
-
-.header-buttons button {
-    height: 43px;
-    padding: 0 25px;
-
-    border-radius: 5px;
-
-    font-size: 14px;
-    font-weight: bold;
-
-    cursor: pointer;
-}
-
-.sign-in {
-    background-color: white;
-    border: 1px solid #bcd0e5;
-    color: #173b5f;
-}
-
-.sign-up {
-    background-color: #ff9900;
-    border: 1px solid #ff9900;
-    color: white;
+    gap: 14px;
 }
 
 
-/* =========================
-   MAIN CONTENT
-   ========================= */
-
-.main-content {
-    width: 1126px;
-    margin: 60px auto 0;
-}
-
-
-/* Intro section */
+/* ============= INTRO (big first section) ============= */
 
 .intro {
-    width: 100%;
-    height: 500px;
-
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    /* Positioning */
-    position: relative;
+    padding-top: 47px;
 }
 
-
-/* =========================
-   TEXT
-   ========================= */
-
-.intro-text {
-    width: 52%;
-    padding-top: 70px;
-
-    /* Positioning */
-    position: relative;
-    z-index: 2;
+.intro__content {
+    width: 518px;
 }
 
-.intro-text h1 {
-    font-size: 40px;
-    line-height: 1.25;
+.intro__title {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 54px;
 
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
-.intro-text p {
-    width: 480px;
+.intro__text {
+    width: 458px;
 
+    color: #544837;
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 28px;
 
     margin-bottom: 45px;
 }
 
-
-/* =========================
-   INTRO BUTTONS
-   ========================= */
-
-.intro-buttons {
+.intro__btns {
     display: flex;
     align-items: center;
-    gap: 28px;
+    gap: 30px;
 }
 
-.get-started {
-    width: 160px;
-    height: 50px;
-
-    border: none;
-    border-radius: 5px;
-
-    background-color: #ff9900;
-    color: white;
-
-    font-size: 15px;
-    font-weight: bold;
-
-    cursor: pointer;
+.intro__image {
+    width: 605px;
 }
 
-.watch-video {
+.intro__img {
+    display: block;
+    width: 100%;
+}
+
+
+/* ============= WATCH THE VIDEO LINK ============= */
+
+.video {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
     color: #ff9900;
+    font-weight: 600;
+    text-decoration: none;
 
-    font-weight: bold;
+    transition: 0.25s;
+}
+
+/* the small ▶ triangle */
+
+.video__icon {
+    font-size: 13px;
+
+    transition: 0.25s;
+}
+
+.video:hover {
+    color: #e08600;
+}
+
+.video:hover .video__icon {
+    transform: scale(1.2);
+}
+
+.video:hover .video__text {
     text-decoration: underline;
 }
 
-.play {
-    display: inline-block;
-    margin-right: 8px;
 
-    /* CSS transformation */
-    transform: scale(1.1);
+/* ============= TOOLS SECTION (4 CARDS) ============= */
+
+.tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 110px;
+}
+
+.tools__title {
+    width: 539px;
+
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+
+    margin-bottom: 54px;
+}
+
+.tools__list {
+    display: flex;
+    align-items: flex-start;
+    gap: 45px;
+}
+
+.tools__btn {
+    margin-top: 34px;
 }
 
 
-/* =========================
-   IMAGE
-   ========================= */
+/* ============= ONE CARD ============= */
 
-.intro-image {
-    width: 48%;
-    height: 100%;
-
-    /* Positioning */
-    position: relative;
+.card {
+    width: 240px;
 }
 
-.intro-image img {
-    width: 560px;
+/* The small coloured icon picture */
 
-    /* Positioning */
-    position: absolute;
+.card__icon {
+    display: block;
+    width: 50px;
 
-    top: 0;
-    right: -20px;
+    margin-bottom: 30px;
+}
 
-    /* Transformation */
-    transform: translate(10px, 5px);
+.card__title {
+    font-size: 22px;
+    font-weight: 600;
+
+    margin-bottom: 13px;
+}
+
+.card__text {
+    color: #544837;
+    font-weight: 500;
+    line-height: 26px;
 }
 
 
-/* =========================
-   HOVER EFFECT
-   ========================= */
+/* ============= INFO SECTIONS (3 of them) ============= */
 
-.get-started,
-.sign-up {
-    transition: transform 0.2s ease;
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+
+    padding-top: 100px;
 }
 
-.get-started:hover,
-.sign-up:hover {
+/* Puts the picture on the left instead of the right */
 
-    /* Transformation */
-    transform: translateY(-3px);
+.info--flip {
+    flex-direction: row-reverse;
+}
+
+/* First info section needs a bigger gap on top */
+
+.info--first {
+    padding-top: 210px;
+}
+
+.info__content {
+    width: 486px;
+}
+
+.info__small {
+    color: #544837;
+    font-weight: 500;
+
+    margin-bottom: 3px;
+}
+
+.info__title {
+    font-size: 36px;
+    font-weight: 700;
+
+    margin-bottom: 22px;
+}
+
+.info__text {
+    color: #544837;
+    font-weight: 500;
+    line-height: 26px;
+
+    margin-bottom: 30px;
+}
+
+.info__img {
+    display: block;
+}
+
+
+/* ============= SMALL TITLE + TEXT LIST ============= */
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.list__title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+
+    margin-bottom: 12px;
+}
+
+.list__text {
+    color: #544837;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+
+/* ============= ORANGE TICK LIST ============= */
+
+.ticks {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.ticks__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.ticks__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 35px;
+    height: 35px;
+
+    background-color: #ff9900;
+    border-radius: 14px;
+
+    color: #ffffff;
+    font-size: 17px;
+
+    margin-top: 8px;
+
+    /* stops the orange square from getting squashed */
+    flex-shrink: 0;
+}
+
+.ticks__text {
+    color: #544837;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+
+/* ============= FOOTER ============= */
+
+.footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    /* auto keeps the footer centered like .container does */
+    margin: 145px auto 0;
+
+    padding-top: 103px;
+    padding-bottom: 83px;
+
+    border-top: 1px solid #bcd0e5;
+}
+
+.footer__col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__col--big {
+    width: 325px;
+}
+
+.footer__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+
+    margin-bottom: 35px;
+}
+
+.footer__link {
+    color: #544837;
+    line-height: 35px;
+    text-decoration: none;
+
+    transition: 0.25s;
+}
+
+.footer__link:hover {
+    color: #ff9900;
+}
+
+.footer__input {
+    width: 100%;
+    height: 48px;
+    padding: 0 15px;
+
+    border: 1px solid #bcd0e5;
+    border-radius: 4px;
+
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    color: #2f281e;
+
+    transition: 0.25s;
+}
+
+.footer__input::placeholder {
+    color: #bcd0e5;
+}
+
+.footer__input:hover,
+.footer__input:focus {
+    border-color: #ff9900;
+    outline: none;
+}
+
+.footer__btn {
+    width: 131px;
+    height: 39px;
+    padding: 0 12px;
+    font-weight: 700;
+
+    margin-top: 21px;
 }
