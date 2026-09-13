@@ -1,0 +1,483 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: #2f281e;
+
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+}
+
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+
+/* ============= LOGO ============= */
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+}
+
+.logo__img {
+    display: block;
+    width: 187.34px;
+}
+
+.logo:hover {
+    opacity: 0.75;
+}
+
+
+/* ============= BUTTONS ============= */
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 46px;
+    padding: 0 22px;
+
+    border: 1px solid #ff9900;
+    border-radius: 4px;
+
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+
+    /* keeps button text on one line */
+    white-space: nowrap;
+
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+/* White button with a border - "Sign In" */
+
+.btn--white {
+    width: 102px;
+
+    background-color: #ffffff;
+    border-color: #BCD0E5;
+    color: #173a56;
+}
+
+.btn--white:hover {
+    border-color: #ff9900;
+    color: #ff9900;
+    transform: translateY(-2px);
+}
+
+/* Orange button - "Sign Up", "Get started" */
+
+.btn--orange {
+    width: 110px;
+
+    background-color: #ff9900;
+    color: #ffffff;
+}
+
+.btn--orange:hover {
+    background-color: #e08600;
+    border-color: #e08600;
+    transform: translateY(-2px);
+}
+
+/* Bigger orange button */
+
+.btn--big {
+    width: 175px;
+    height: 53px;
+    font-weight: 700;
+}
+
+
+/* ============= NAVIGATION ============= */
+
+.nav {
+    display: flex;
+    align-items: center;
+
+    padding-top: 35px;
+}
+
+.nav__menu {
+    display: flex;
+    gap: 37px;
+
+    /* auto margin pushes the menu to the right side */
+    margin-left: auto;
+    margin-right: 29px;
+}
+
+.nav__link {
+    color: #2f281e;
+
+    font-size: 14px;
+    text-decoration: none;
+
+    transition: 0.25s;
+}
+
+.nav__link:hover {
+    color: #ff9900;
+}
+
+.nav__btns {
+    display: flex;
+    gap: 14px;
+}
+
+
+/* ============= INTRO (big first section) ============= */
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 47px;
+}
+
+.intro__content {
+    width: 518px;
+}
+
+.intro__title {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 54px;
+
+    margin-bottom: 30px;
+}
+
+.intro__text {
+    width: 458px;
+
+    color: #544837;
+    font-size: 18px;
+    line-height: 28px;
+
+    margin-bottom: 45px;
+}
+
+.intro__btns {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.intro__image {
+    width: 605px;
+}
+
+.intro__img {
+    display: block;
+    width: 100%;
+}
+
+
+/* ============= WATCH THE VIDEO LINK ============= */
+
+.video {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #ff9900;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: 0.25s;
+}
+
+/* the small ▶ triangle */
+
+.video__icon {
+    font-size: 13px;
+
+    transition: 0.25s;
+}
+
+.video:hover {
+    color: #e08600;
+}
+
+.video:hover .video__icon {
+    transform: scale(1.2);
+}
+
+.video:hover .video__text {
+    text-decoration: underline;
+}
+
+
+/* ============= TOOLS SECTION (4 CARDS) ============= */
+
+.tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 110px;
+}
+
+.tools__title {
+    width: 539px;
+
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+
+    margin-bottom: 54px;
+}
+
+.tools__list {
+    display: flex;
+    align-items: flex-start;
+    gap: 45px;
+}
+
+.tools__btn {
+    margin-top: 34px;
+}
+
+
+/* ============= ONE CARD ============= */
+
+.card {
+    width: 240px;
+}
+
+/* The small coloured icon picture */
+
+.card__icon {
+    display: block;
+    width: 50px;
+
+    margin-bottom: 30px;
+}
+
+.card__title {
+    font-size: 22px;
+    font-weight: 600;
+
+    margin-bottom: 13px;
+}
+
+.card__text {
+    color: #544837;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+
+/* ============= INFO SECTIONS (3 of them) ============= */
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+
+    padding-top: 100px;
+}
+
+/* Puts the picture on the left instead of the right */
+
+.info--flip {
+    flex-direction: row-reverse;
+}
+
+/* First info section needs a bigger gap on top */
+
+.info--first {
+    padding-top: 210px;
+}
+
+.info__content {
+    width: 486px;
+}
+
+.info__small {
+    color: #544837;
+    font-weight: 500;
+
+    margin-bottom: 3px;
+}
+
+.info__title {
+    font-size: 36px;
+    font-weight: 700;
+
+    margin-bottom: 22px;
+}
+
+.info__text {
+    color: #544837;
+    font-weight: 500;
+    line-height: 26px;
+
+    margin-bottom: 30px;
+}
+
+.info__img {
+    display: block;
+}
+
+
+/* ============= SMALL TITLE + TEXT LIST ============= */
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.list__title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+
+    margin-bottom: 12px;
+}
+
+.list__text {
+    color: #544837;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+
+/* ============= ORANGE TICK LIST ============= */
+
+.ticks {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.ticks__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.ticks__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 35px;
+    height: 35px;
+
+    background-color: #ff9900;
+    border-radius: 14px;
+
+    color: #ffffff;
+    font-size: 17px;
+
+    margin-top: 8px;
+
+    /* stops the orange square from getting squashed */
+    flex-shrink: 0;
+}
+
+.ticks__text {
+    color: #544837;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+
+/* ============= FOOTER ============= */
+
+.footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    /* auto keeps the footer centered like .container does */
+    margin: 145px auto 0;
+
+    padding-top: 103px;
+    padding-bottom: 83px;
+
+    border-top: 1px solid #bcd0e5;
+}
+
+.footer__col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__col--big {
+    width: 325px;
+}
+
+.footer__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+
+    margin-bottom: 35px;
+}
+
+.footer__link {
+    color: #544837;
+    line-height: 35px;
+    text-decoration: none;
+
+    transition: 0.25s;
+}
+
+.footer__link:hover {
+    color: #ff9900;
+}
+
+.footer__input {
+    width: 100%;
+    height: 48px;
+    padding: 0 15px;
+
+    border: 1px solid #bcd0e5;
+    border-radius: 4px;
+
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    color: #2f281e;
+
+    transition: 0.25s;
+}
+
+.footer__input::placeholder {
+    color: #bcd0e5;
+}
+
+.footer__input:hover,
+.footer__input:focus {
+    border-color: #ff9900;
+    outline: none;
+}
+
+.footer__btn {
+    width: 131px;
+    height: 39px;
+    padding: 0 12px;
+    font-weight: 700;
+
+    margin-top: 21px;
+}
